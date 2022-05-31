@@ -1,7 +1,7 @@
-#include "list.h"
+#include "lists.h"
 
 /**
- * check_cycle - checkes if a singly linked list has a cycle
+ * check_cycle - checks if a singly linked list has a cycle
  * @list: pointer to the head of the list
  * Return: 0 in case of no cycle and 1 at the opposite
  */
