@@ -50,7 +50,7 @@ int compare(listint_t *h1, listint_t *h2)
 	}
 	else
 	{
-	     return (0);
+	    return (0);
 	}
     }
 
@@ -69,7 +69,7 @@ int compare(listint_t *h1, listint_t *h2)
  * Return: 0 if it is not a palindrome,
  * 1 if it is a palndrome
  */
-int is_palindrome(listint_ **head)
+int is_palindrome(listint_t **head)
 {
     listint_t *slow, *fast, *prev_slow;
     listint_t *scn_half, *middle;
