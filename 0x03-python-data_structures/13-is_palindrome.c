@@ -76,7 +76,7 @@ int is_palindrome(listint_t **head)
 	int isp;
 
 	slow = fast = prev_slow = *head;
-	middle +NULL;
+	middle NULL;
 	isp = 1;
 
 	if (*head != NULL && (*head)->next != NULL)
