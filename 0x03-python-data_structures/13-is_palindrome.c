@@ -4,7 +4,7 @@
  * reverse - reverses the second half of the list
  *
  * @h_r: head of the second half
- * return: no return
+ * Return: no return
  */
 void reverse(listint_t **h_r)
 {
@@ -67,7 +67,7 @@ int compare(listint_t *h1, listint_t *h2)
  * is a palindrome
  * @head: pointer to head of list
  * Return: 0 if it is not a palindrome,
- * 1 if it is a palindrome
+ * 1 if it is a palndrome
  */
 int is_palindrome(listint_t **head)
 {
