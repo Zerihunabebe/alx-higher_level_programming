@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-# 2-uniq_add.py
-
-
-def uniq_add(my_list=[]):
-    """adds all unique integers in a list (only once for each integer)."""
-    result = 0
-    for i in set(my_list):
-        result += i
-    return (result)
+def search_replace(my_list, search, replace):
+    if not my_list:
+        return my_list
+    return [val if val != search else replace for val in my_list]
