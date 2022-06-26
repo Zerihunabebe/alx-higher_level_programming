@@ -49,7 +49,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """Insert a new Node to the SinglyLinkedList.
 
-        The node is inserted into the at the correct
+        The node is inserted into the list at the correct
         ordered numerical position.
 
         Args:
@@ -77,4 +77,4 @@ class SinglyLinkedList:
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
-            return ('\n'.join(values))
+        return ('\n'.join(values))
