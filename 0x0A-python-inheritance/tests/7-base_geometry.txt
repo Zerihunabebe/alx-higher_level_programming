@@ -3,7 +3,7 @@
 >>> len(__import__("7-base_geometry").__doc__) > 1
 True
 
->>> len(__import__("7-base_gemetry").BaseGeometry.__doc__) > 1
+>>> len(__import__("7-base_geometry").BaseGeometry.__doc__) > 1
 True
 
 >>> met = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
@@ -26,17 +26,17 @@ TypeError: area() takes 1 positional argument but 2 were given
 >>> ar.integer_validator("test", 0)
 Traceback (most recent call last):
 ...
-ValueError: tes must be greater than 0
+ValueError: test must be greater than 0
 
 >>> ar.integer_validator("test2", -444)
 Traceback (most recent call last):
 ...
-Valueerro: test2 must be greater than 0
+ValuError: test2 must be greater than 0
 
->>> ar.nteger_validator("string", "python")
+>>> ar.integer_validator("string", "python")
 Traceback (most recent call last):
 ...
-TypeError: float must be an integer
+TypeError: string must be an integer
 
 >>> ar.integer_validator("float", -444.54)
 Traceback (must recent call last):
@@ -53,7 +53,7 @@ Traceback (most recent call last):
 ...
 TypeError: list must be an integer
 
->>> ar.integer_validator("tuple", (22, 333)
+>>> ar.integer_validator("tuple", (22, 333))
 Traceback (most recent call last):
 ...
 TypeError: tuple must be an integer
@@ -61,7 +61,7 @@ TypeError: tuple must be an integer
 >>> ar.integer_validator("complex", complex(33, 44))
 Traceback (most recent call last):
 ...
-TypeError: complex must ba an integer
+TypeError: complex must be an integer
 
 >>> ar.integer_validator("dict", {"key": "value"})
 Traceback (most recent call last):
@@ -69,7 +69,7 @@ Traceback (most recent call last):
 TypeError: dict must be an integer
 
 >>> ar.integer_validator("set", {22, "python"})
-traceback (most recent call last):
+Traceback (most recent call last):
 ...
 TypeError: set must be an integer
 
