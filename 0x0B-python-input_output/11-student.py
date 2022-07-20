@@ -6,11 +6,11 @@
 class Student:
     """Represent a student."""
 
-    def __init__(self, first_name, age):
+    def __init__(self, first_name, last_name, age):
         """Initialize a new Student.
 
         Args:
-            first_name (str): The first nae of the student.
+            first_name (str): The first name of the student.
             last_name (str): The last name of the student.
             age (int): The age of the student.
         """
@@ -29,14 +29,14 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, )}
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
     def reload_from_json(self, json):
         """Replace all attributes of the Student.
 
-        Age:
-            json (dirt): The key/value pairs to attributes with.
+        Args:
+            json (dirt): The key/value pairs to replace attributes with.
         """
         for k, v in json.items():
             setattr(self, k, v)
